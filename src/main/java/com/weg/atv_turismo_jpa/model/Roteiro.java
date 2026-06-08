@@ -1,6 +1,6 @@
 package com.weg.atv_turismo_jpa.model;
-
-import java.time.LocalDate;
+    
+import java.time.LocalDateTime;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -28,15 +28,15 @@ public class Roteiro {
     private String local;
 
     @Column(name = "hora_chegada", nullable = false)
-    private LocalDate hora_chegada;
+    private LocalDateTime hora_chegada;
 
     @Column(name = "hora_saida", nullable = false)
-    private LocalDate hora_saida;
+    private LocalDateTime hora_saida;
 
     @Column(name = "capacidade_max", nullable = false)
     private String capacidade_max;
 
-    public Roteiro(String local, LocalDate hora_chegada, LocalDate hora_saida, String capacidade_max) {
+    public Roteiro(String local, LocalDateTime hora_chegada, LocalDateTime hora_saida, String capacidade_max) {
         this.local = local;
         this.hora_chegada = hora_chegada;
         this.hora_saida = hora_saida;
