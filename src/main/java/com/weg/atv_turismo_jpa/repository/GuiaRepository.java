@@ -7,5 +7,5 @@ import com.weg.atv_turismo_jpa.model.Guia;
 
 @Repository
 public interface GuiaRepository extends JpaRepository<Guia, Long>{
-
+    boolean existsByNome(String nome);
 }

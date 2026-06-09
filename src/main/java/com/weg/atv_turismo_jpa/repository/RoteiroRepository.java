@@ -7,5 +7,5 @@ import com.weg.atv_turismo_jpa.model.Roteiro;
 
 @Repository
 public interface RoteiroRepository extends JpaRepository<Roteiro, Long>{
-
+    boolean existsByLocal(String local);
 }

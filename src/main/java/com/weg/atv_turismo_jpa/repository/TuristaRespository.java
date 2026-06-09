@@ -7,5 +7,5 @@ import com.weg.atv_turismo_jpa.model.Turista;
 
 @Repository
 public interface TuristaRespository extends JpaRepository<Turista, Long>{
-
+    boolean existsByNome(String nome);
 }

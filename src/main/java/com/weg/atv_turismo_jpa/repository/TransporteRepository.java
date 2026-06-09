@@ -7,5 +7,5 @@ import com.weg.atv_turismo_jpa.model.Transporte;
 
 @Repository
 public interface TransporteRepository extends JpaRepository<Transporte, Long>{
-
+    boolean existsByNome(String nome);
 }

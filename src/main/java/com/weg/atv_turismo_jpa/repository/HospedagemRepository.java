@@ -7,5 +7,5 @@ import com.weg.atv_turismo_jpa.model.Hospedagem;
 
 @Repository
 public interface HospedagemRepository extends JpaRepository<Hospedagem, Long>{
-
+    boolean existsByNome(String nome);
 }
